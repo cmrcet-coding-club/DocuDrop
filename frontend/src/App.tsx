@@ -1,29 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { LoginPage, HomePage } from './pages';
+import Home from './components/home';
+import LoginPage from './components/LoginPage';
+const App = () => {
   return (
-    <div className="App">
-      <div className="min-w-min mb-16">
-        <img src={reactLogo} className="align-text-bottom ml-28" alt="react logo" width="100" />
-      </div>
-      <h1>CMR + Django</h1>
-      <div className="card mb-8">
-        <button className = "mb-8" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code>
-        </p>
-      </div>
-      <p className="read-the-docs">
-        This is being hosted on Firebase.  
-      </p>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
