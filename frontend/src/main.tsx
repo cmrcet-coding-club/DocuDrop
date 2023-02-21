@@ -8,7 +8,7 @@ import { NextUIProvider } from "@nextui-org/react"
 // import dotenv from "dotenv"
 
 // const GOOGLE_CLIENT_ID = "344089641487-bigep5ukdoq3s9as3efksuo7u52ej8k0.apps.googleusercontent.com"
-const GOOGLE_CLIENT_ID = "473058590814-ednu2hgm0b4o6tjfmsusnhvtqdeluum3.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "391455858852-lkr43gchljq953mp7srbh50mcqn0tdro.apps.googleusercontent.com";
 
 import App from "./App"
 
