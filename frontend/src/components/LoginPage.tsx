@@ -36,7 +36,7 @@ const LoginPage = () => {
       mb: "20px",
      }}
     >
-     Login to DocuDrop with
+     Login to Query Resolve with
     </Text>
     <Spacer y={1} />
     {/* <Button color='gradient' auto ghost onClick={() => loginToGithub()}>
