@@ -21,7 +21,8 @@ const LoginPage = () => {
   onSuccess: tokenResponse => {
    localStorage.setItem("loginWith", "Google")
    localStorage.setItem("accessToken", tokenResponse.access_token)
-   window.location.href = "localhost:3000/user";
+   console.log("ok");
+   window.location.href = "http://localhost:3000/user";
   },
  })
 
