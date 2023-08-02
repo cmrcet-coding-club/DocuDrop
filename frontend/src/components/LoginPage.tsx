@@ -21,8 +21,7 @@ const LoginPage = () => {
   onSuccess: tokenResponse => {
    localStorage.setItem("loginWith", "Google")
    localStorage.setItem("accessToken", tokenResponse.access_token)
-   console.log("ok");
-   window.location.href = "http://localhost:3000/user";
+   window.location.href = "https://queryresolve.up.railway.app/user";
   },
  })
 
